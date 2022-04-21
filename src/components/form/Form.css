@@ -1,0 +1,58 @@
+.form__wrapper {
+    margin: 0 auto;
+    margin-top: 1rem;
+    max-width: var(--minWidth);
+}
+
+.form__wrapper form {
+    display: flex;
+    padding: 0 20px;
+    line-height: 40px;
+    flex-direction: column;
+}
+
+.form__wrapper label {
+    padding: 0 10px;
+}
+
+.form__wrapper input,
+.form__wrapper button,
+.form__wrapper select,
+.form__wrapper textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 1rem;
+
+    border: 2px solid black;
+    text-transform: capitalize;
+}
+
+.form__wrapper input:focus,
+.form__wrapper select:focus,
+.form__wrapper textarea:focus {
+    transition: all 0.3s;
+    box-shadow: 0 0 4px 0 var(--lightGrey);
+}
+
+.form__wrapper textarea {
+    resize: vertical;
+    min-height: 5rem;
+    max-height: 15rem;
+}
+
+.form__wrapper button {
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: var(--white);
+    transition: all 0.2s;
+    background: var(--darkGrey);
+    font-size: var(--fontSmall);
+    outline: 2px solid black;
+}
+
+.form__wrapper button:hover {
+    color: var(--darkGrey);
+    background: var(--white);
+}

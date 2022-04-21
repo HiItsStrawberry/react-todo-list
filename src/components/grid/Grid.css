@@ -1,0 +1,69 @@
+.grid__wrapper {
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    max-width: var(--medWidth);
+}
+
+.grid__content {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.card__body {
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    box-shadow: 0 0 2px 0;
+    background: var(--superLightGrey);
+}
+
+.deletable svg {
+    color: red;
+    font-size: var(--fontMed);
+}
+
+.not__deletable svg,
+.not__deletable a {
+    color: green;
+    text-decoration: none;
+    font-size: var(--fontMed);
+}
+
+
+.card__body:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 10px 0;
+}
+
+.card__body h3 {
+    /* padding: 0; */
+    margin: 0;
+    color: var(--medGrey);
+}
+
+.card__body p {
+    color: var(--lightGrey);
+}
+
+.card__body button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    color: var(--darkGrey);
+    text-transform: lowercase;  
+}
+
+@media screen and (max-width: 768px) {
+    .grid__content {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .grid__content {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}

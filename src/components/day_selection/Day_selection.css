@@ -1,0 +1,26 @@
+.btn__wrapper {
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    max-width: var(--medWidth);
+}
+
+.btn__wrapper button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background: none;
+    font-size: var(--fontMed);
+    border: 2px solid transparent;
+}
+
+.btn__wrapper button:hover{
+    border-bottom: 2px solid var(--medGrey);
+}
+
+@media screen and (max-width: 500px) {
+    .btn__wrapper button {
+        font-size: var(--fontSmall);
+    }
+}

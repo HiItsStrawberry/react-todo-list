@@ -1,0 +1,9 @@
+.home__wrapper {
+    margin: 20px auto;
+    max-width: var(--maxWidth);
+}
+
+.home__content {
+    margin: 0 auto;
+    min-height: 100%;
+}
